@@ -1,0 +1,280 @@
+.home-page {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.search-input input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.search-icon {
+  margin-right: 5px;
+  color: #777;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Featured Jobs Section */
+.featured-jobs {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 2em;
+}
+
+.section-header a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.job-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.job-header h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.job-badge {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-left: auto;
+}
+
+.job-location {
+  display: flex;
+  align-items: center;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.job-description {
+  margin-bottom: 10px;
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-salary {
+  font-weight: bold;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Stats Section */
+.stats {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.stat-number {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: #777;
+}
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.categories-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.category-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.category-card p {
+  color: #777;
+}
+
+.arrow-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
