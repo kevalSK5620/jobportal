@@ -7,6 +7,8 @@ import Jobs from "./pages/Jobs";
 import Companies from "./pages/Companies";
 import Profile from "./pages/Profile";
 import Footer from './Components/Footer';
+import ForgotPassword from './pages/ForgotPassword';
+import VerifyOTP from './pages/VerifyOTP';
 
 
 const Layout = () => {
@@ -34,6 +36,8 @@ function App() {
             <Route path="companies" element={<Companies />} />
             <Route path="profile" element={<Profile />} />
             <Route path="footer" element={<Footer />} />
+            <Route path="ForgotPassword" element={<ForgotPassword />} />
+            <Route path="verify-otp" element={<VerifyOTP />} />
       </Route>
     </Routes>
     </>

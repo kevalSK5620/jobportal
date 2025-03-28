@@ -16,6 +16,8 @@ app.use("/city",cityRoutes)
 const stateRoutes = require("./src/routes/StateRoutes")
 app.use("/state",stateRoutes)
 
+const otpRoutes = require("./src/routes/OtpRoutes")
+app.use("/otp",otpRoutes)
 
 
 mongoose.connect("mongodb://127.0.0.1:27017/jobportal").then(()=>{

@@ -57,7 +57,7 @@ const LoginForm = () => {
             <input
               type="email"
               name="email"
-              placeholder="itsnaeemanjum@gmail.com"
+              placeholder="user@gmail.com"
               value={formData.email}
               onChange={handleChange}
               className="w-full pl-10 pr-3 py-2 border rounded-md text-gray-900 border-gray-300 focus:ring-blue-500 focus:border-blue-500"
@@ -88,7 +88,7 @@ const LoginForm = () => {
 
           {/* Forgot Password */}
           <div className="text-right">
-            <a href="#" className="text-sm text-blue-600 hover:underline">Forgot Password?</a>
+            <a href="ForgotPassword" className="text-sm text-blue-600 hover:underline">Forgot Password?</a>
           </div>
 
           {/* Submit Button */}

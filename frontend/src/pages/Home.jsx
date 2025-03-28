@@ -34,7 +34,7 @@ const Home = () => {
       <section className="featured-jobs">
         <div className="section-header">
           <h2>Featured Jobs</h2>
-          <a href="#">
+          <a href="Jobs">
             View all jobs <ArrowRight className="arrow-icon" />
           </a>
         </div>
@@ -52,7 +52,7 @@ const Home = () => {
                 <span className="job-badge">Full-time</span>
               </div>
               <div className="job-location">
-                <Building2 className="location-icon" /> San Francisco, CA
+                <Building2 className="location-icon" /> Ahmedabad, GJ
               </div>
               <p className="job-description">Join our team and help build the next generation of web applications...</p>
               <div className="job-footer">

@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-heading">Contact Us</h3>
             <ul className="footer-contact">
-              <li><MapPin className="contact-icon" /> 123 Business Ave, San Francisco, CA 94107</li>
+              <li><MapPin className="contact-icon" /> Ahmedabad, GJ</li>
               <li><Phone className="contact-icon" /> +1 (555) 123-4567</li>
               <li><Mail className="contact-icon" /> support@jobPortal.com</li>
             </ul>
