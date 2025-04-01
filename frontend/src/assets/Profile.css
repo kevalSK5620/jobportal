@@ -1,0 +1,236 @@
+/* General Styles */
+.profile-container {
+    background: linear-gradient(to bottom right, #f7fafc, #e2e8f0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+  
+  .profile-wrapper {
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+   
+  .badge-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .badge {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .green-badge { background: #e6fffa; color: #2c7a7b; }
+  .blue-badge { background: #ebf8ff; color: #2b6cb0; }
+  
+  .profile-header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-image-container {
+    position: relative;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .star-icon {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background: #4299e1;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .profile-title {
+    color: #3182ce;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    color: #4a5568;
+    transition: color 0.2s;
+  }
+  
+  .social-icon:hover {
+    color: #2b6cb0;
+  }
+  
+  /* Sections */
+  .section {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .section-text {
+    color: #4a5568;
+  }
+  
+  .heart-icon {
+    color: red;
+  }
+  
+  /* Icons */
+  .icon-container {
+    background: #d1fae5;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-small { 
+    width: 18px;
+    height: 18px; 
+}
+
+  .icon-medium { 
+    width: 24px; 
+    height: 24px; 
+    color: #065f46;
+}
+
+/* Container Styles */
+.tech-section {
+  background: white;
+  padding: 25px;
+  margin-top: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.icon-container {
+  background: #d1fae5;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-medium {
+  width: 24px;
+  height: 24px;
+  color: #065f46;
+}
+
+/* Skill Categories */
+.skill-category {
+  margin-top: 20px;
+}
+
+.skill-category h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+/* Skill Tags */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Category Colors */
+.frontend {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.backend {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.devops {
+  background: #f5f3ff;
+  color: #6b46c1;
+}

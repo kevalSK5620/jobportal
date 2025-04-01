@@ -1,47 +1,43 @@
 import React, { useState } from "react";
 import { Mail, Lock, Eye, EyeOff } from "lucide-react";
 import "../pages/Login.css";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 const LoginForm = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [formData, setFormData] = useState({ email: "", password: "" });
-  const [errors, setErrors] = useState({ email: "", password: "" });
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-  const validateForm = () => {
-    let isValid = true;
-    const newErrors = { email: "", password: "" };
-
-    if (!formData.email) {
-      newErrors.email = "Email is required";
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email";
-      isValid = false;
-    }
-
-    if (!formData.password) {
-      newErrors.password = "Password is required";
-      isValid = false;
-    } else if (formData.password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
-      isValid = false;
-    }
-
-    setErrors(newErrors);
-    return isValid;
-  };
-
-  const handleSubmit = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log("Form submitted:", formData);
-    }
-  };
+    setError('');
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    if(!email) {
+      setError('Email is required');
+      return;
+    }
+
+    if(!password) {
+      setError('Password is required');
+      return;
+    }
+
+    try{
+      const response = await axios.post('http://localhost:3000/user/login', {email, password});
+
+      if (response.data.error === false) {
+        alert(response.data.message);
+        navigate('/');
+      }else{
+        setError(response.data.message);
+      }
+    }catch (err) {
+      console.log(err);
+      setError(err.response?.data?.message || 'An error occurred');
+    }
   };
 
   return (

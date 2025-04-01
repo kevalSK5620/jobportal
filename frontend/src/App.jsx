@@ -10,7 +10,6 @@ import Footer from './Components/Footer';
 import ForgotPassword from './pages/ForgotPassword';
 import VerifyOTP from './pages/VerifyOTP';
 
-
 const Layout = () => {
   const location = useLocation();
   const hideNavbar = ["/login", "/signup","/forgotpassword"].includes(location.pathname);

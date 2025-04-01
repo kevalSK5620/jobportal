@@ -10,15 +10,6 @@ const otpSchema = new Schema({
     type: String,
     required: true
   },
-  used: {
-    type: Boolean,
-    default: false
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-    expires: 900 
-  },
   expiresAt: {
     type: Date,
     required: true
