@@ -9,11 +9,14 @@ import Profile from "./pages/Profile";
 import Footer from './Components/Footer';
 import ForgotPassword from './pages/ForgotPassword';
 import VerifyOTP from './pages/VerifyOTP';
+import Admin from './admin/Admin';
+import Notifications from "./pages/Notifications";
+import ReferralSubmission from "./pages/ReferralSubmission";
 
 const Layout = () => {
   const location = useLocation();
-  const hideNavbar = ["/login", "/signup","/forgotpassword"].includes(location.pathname);
-  const hideFooter = ["/login","/signup","/forgotpassword"].includes(location.pathname);
+  const hideNavbar = ["/login", "/signup","/forgotpassword","/admin"].includes(location.pathname);
+  const hideFooter = ["/login","/signup","/forgotpassword","/admin"].includes(location.pathname);
   return (
     <>
       {!hideNavbar && <Navbar />}
@@ -37,6 +40,9 @@ function App() {
             <Route path="footer" element={<Footer />} />
             <Route path="ForgotPassword" element={<ForgotPassword />} />
             <Route path="verify-otp" element={<VerifyOTP />} />
+            <Route path="admin" element={<Admin />} />
+            <Route path="notifications" element={<Notifications />} />
+            <Route path="referralsubmission" element={<ReferralSubmission />} />
       </Route>
     </Routes>
     </>

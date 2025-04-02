@@ -50,7 +50,7 @@ const Footer = () => {
             <h3 className="footer-heading">Contact Us</h3>
             <ul className="footer-contact">
               <li><MapPin className="contact-icon" /> Ahmedabad, GJ</li>
-              <li><Phone className="contact-icon" /> +1 (555) 123-4567</li>
+              <li><Phone className="contact-icon" /> +91 1234567890</li>
               <li><Mail className="contact-icon" /> support@jobPortal.com</li>
             </ul>
             <div className="footer-newsletter">
