@@ -34,7 +34,7 @@ const Home = () => {
       <section className="featured-jobs">
         <div className="section-header">
           <h2>Featured Jobs</h2>
-          <a href="Jobs">
+          <a href="Jobs" className="view-all-jobs">
             View all jobs <ArrowRight className="arrow-icon" />
           </a>
         </div>
