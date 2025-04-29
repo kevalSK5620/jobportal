@@ -22,6 +22,10 @@ const userSchema = new mongoose.Schema({
         enum: ["student", "recruiter"],
         required: true,
     },
+    otp: {
+        code: { type: String },
+        expiresAt: { type: Date }
+    },
     profile:{
         bio: { type: String },
         skills: { type: [String] },
