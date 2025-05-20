@@ -126,7 +126,6 @@ const Signup = () => {
                             value={input.fullname}
                             name="fullname"
                             onChange={changeEventHandler}
-                            placeholder="patel"
                         />
                     </div>
                     <div className='my-2'>
@@ -136,7 +135,6 @@ const Signup = () => {
                             value={input.email}
                             name="email"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
                         />
                     </div>
                     <div className='my-2'>
@@ -146,7 +144,6 @@ const Signup = () => {
                             value={input.phoneNumber}
                             name="phoneNumber"
                             onChange={changeEventHandler}
-                            placeholder="8080808080"
                         />
                     </div>
                     <div className='my-2'>
@@ -156,7 +153,6 @@ const Signup = () => {
                             value={input.password}
                             name="password"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
                         />
                     </div>
                     <div className='flex items-center justify-between'>
@@ -179,7 +175,6 @@ const Signup = () => {
                                     value="recruiter"
                                     checked={input.role === 'recruiter'}
                                     onChange={changeEventHandler}
-                                    className="cursor-pointer"
                                 />
                                 <Label htmlFor="r2">Recruiter</Label>
                             </div>
@@ -190,7 +185,6 @@ const Signup = () => {
                                 accept="image/*"
                                 type="file"
                                 onChange={changeFileHandler}
-                                className="cursor-pointer"
                             />
                         </div>
                     </div>

@@ -17,6 +17,7 @@ import AdminJobs from "./components/admin/AdminJobs";
 import PostJob from './components/admin/PostJob'
 import Applicants from './components/admin/Applicants'
 import ProtectedRoute from './components/admin/ProtectedRoute'
+import SavedJobs from './components/SavedJobs'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/description/:id" element={<JobDescription />} />
         <Route path="/browse" element={<Browse />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/saved-jobs" element={<SavedJobs />} />
         <Route path="/admin/companies" element={<ProtectedRoute><Companies/></ProtectedRoute>} />
         <Route path="/admin/companies/create" element={<ProtectedRoute><CompanyCreate/></ProtectedRoute>} />
         <Route path="/admin/companies/:id" element={<ProtectedRoute><CompanySetup/></ProtectedRoute>} />

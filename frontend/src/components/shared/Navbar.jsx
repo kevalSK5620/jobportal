@@ -12,6 +12,7 @@ import { toast } from 'sonner'
 
 const Navbar = () => {
     const { user } = useSelector(store => store.auth);
+    const savedJobs = useSelector(store => store.job.savedJobs);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -25,9 +26,10 @@ const Navbar = () => {
             }
         } catch (error) {
             console.log(error);
-            toast.error(error.response.data.message);
+            toast.error(error.response?.data?.message || "Logout failed");
         }
     }
+
     return (
         <div className='bg-white'>
             <div className='flex items-center justify-between mx-auto max-w-7xl h-16'>
@@ -47,11 +49,21 @@ const Navbar = () => {
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/jobs">Jobs</Link></li>
                                     <li><Link to="/browse">Browse</Link></li>
+                                    {user && user.role === 'student' && (
+                                        <li>
+                                            <Link to="/saved-jobs">
+                                                Saved Jobs
+                                                {savedJobs?.length > 0 && (
+                                                    <span className="ml-1 bg-[#7209b7] text-white rounded-full px-2 text-xs">
+                                                        {savedJobs.length}
+                                                    </span>
+                                                )}
+                                            </Link>
+                                        </li>
+                                    )}
                                 </>
                             )
                         }
-
-
                     </ul>
                     {
                         !user ? (
@@ -79,14 +91,13 @@ const Navbar = () => {
                                         </div>
                                         <div className='flex flex-col my-2 text-gray-600'>
                                             {
-                                                user && user.role === 'student' && (
+                                                user.role === 'student' && (
                                                     <div className='flex w-fit items-center gap-2 cursor-pointer'>
                                                         <User2 />
-                                                        <Button variant="link"> <Link to="/profile">View Profile</Link></Button>
+                                                        <Button variant="link"><Link to="/profile">View Profile</Link></Button>
                                                     </div>
                                                 )
                                             }
-
                                             <div className='flex w-fit items-center gap-2 cursor-pointer'>
                                                 <LogOut />
                                                 <Button onClick={logoutHandler} variant="link">Logout</Button>
@@ -97,10 +108,8 @@ const Navbar = () => {
                             </Popover>
                         )
                     }
-
                 </div>
             </div>
-
         </div>
     )
 }

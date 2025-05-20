@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <Briefcase className="h-6 w-6 text-teal-400" />
               <span className="ml-2 text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-400">
-                JobBoard
+                JobPortal
               </span>
             </div>
             <p className="text-indigo-100 mb-4">
@@ -114,25 +114,17 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="flex items-center text-indigo-100 hover:text-teal-300 transition-colors duration-300">
                 <Mail className="h-5 w-5 mr-2 text-teal-300" />
-                support@jobboard.com
+                support@jobPortal.com
               </p>
               <p className="text-indigo-100">
-                123 Job Street, <br />
-                San Francisco, CA 94107
+                Ahmedabad, Gujarat, India
               </p>
-              <Link 
-                to="/contact" 
-                className="inline-block border border-teal-400 rounded-md px-4 py-2 text-teal-300 hover:bg-teal-500/10 transition-colors mt-2
-                hover:shadow-lg hover:shadow-teal-500/20 hover:border-teal-300"
-              >
-                Send Message
-              </Link>
             </div>
           </div>
         </div>
 
         <div className="border-t border-indigo-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-indigo-200 text-sm">
-          <p>&copy; 2025 JobBoard. All rights reserved.</p>
+          <p>&copy; 2025 JobPortal. All rights reserved.</p>
           <div className="mt-4 md:mt-0 space-x-6">
             <Link to="/privacy" className="hover:text-teal-300 transition-colors duration-300">
               Privacy Policy
